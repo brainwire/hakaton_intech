@@ -18,7 +18,7 @@ module.exports = {
     "apps/": "apps/"
   },
   rpc: {
-    host: "78.155.207.180",
+    host: "localhost",
     port: 8545
   }
 };
