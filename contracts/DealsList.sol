@@ -1,4 +1,4 @@
-pragma solidity ^0.4.2;
+pragma solidity ^0.4.4;
 
 import "GarantContract.sol";
 
@@ -13,6 +13,7 @@ contract DealsList {
     struct ListItem {
     	string name;
      	bool state;
+     	address garant;
     }
 
 	/**
@@ -116,18 +117,8 @@ contract DealsList {
 	    	suicide(owner);
 	}
 
-	function approve(uint index) {
-	    string testItem = list_items[msg.sender].ListItems[index].name;
-	    createGC();
+	function approve(uint index) constant returns(address GarantAddr) {
+		address contractGarant = address(new GarantContract());
 	}
 	
-	
-	function createGC() returns(address GCaddr){
-        return address(new GarantContract());
-    }
-    
-    function deleteGC(address gc){
-        GarantContract(gc).remove;
-    }
-
 }

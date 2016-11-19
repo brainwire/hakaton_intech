@@ -81,7 +81,7 @@ app.controller("DashboardCtrl", function($scope) {
 	 */
 	$scope.approve = function($index) {
 		contracts.approve($index).then(function(success){
-			colsole.log("aproved")
+			console.log($index + " ETO RABOTAET");
 			$scope.$apply();
 		});
 	}
