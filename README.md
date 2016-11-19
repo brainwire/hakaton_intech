@@ -24,4 +24,4 @@ true
 > miner.start() // Я запускаю майнер не в первый раз, поэтому у меня номера блоков 31,32,...
 true
 
-geth --password <(echo 123) --unlock "0xba5170b8990a06e16024c36c145dafb4edf3e0d6" --dev --rpc --rpcaddr "0.0.0.0" --rpcapi "admin,debug,miner,shh,txpool,personal,eth,net,web3" console
+geth --password <(echo 123) --unlock "0x8acad6a2db1b933a18c50df3fb1a49a9c99e2d92" --dev --rpc --rpccorsdomain "*" --rpcaddr "0.0.0.0" --rpcapi "admin,debug,miner,shh,txpool,personal,eth,net,web3" console
