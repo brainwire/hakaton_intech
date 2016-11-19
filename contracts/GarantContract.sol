@@ -9,7 +9,7 @@ contract GarantContract{
     
     function remove(){
         if(msg.sender == DealsList){
-            suicide(DealsList)
+            suicide(DealsList);
         }
     }
     
