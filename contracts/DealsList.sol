@@ -114,4 +114,19 @@ contract DealsList {
 	    	suicide(owner);
 	}
 
+	function approve(uint index) {
+	    ListItem testItem = getItemForIndex(index);
+	    createGC;
+	    
+	}
+	
+	
+	function createGC() returns(address GCaddr){
+        return address(new GarantContract());
+    }
+    
+    function deleteGC(address gc){
+        GarantContract(bc).remove;
+    }
+
 }
