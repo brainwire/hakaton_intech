@@ -118,8 +118,7 @@ contract DealsList {
 
 	function approve(uint index) {
 	    string testItem = list_items[msg.sender].ListItems[index].name;
-	    createGC;
-	    
+	    createGC();
 	}
 	
 	

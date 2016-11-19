@@ -11,7 +11,7 @@
 	<li ng-repeat="item in dealsItems">
 		<label class="control control--checkbox">{{item.name}}
 			<div class="control__indicator"></div>
-			<a href="" class="text-success" ng-click="aproveItem(item, $index)">aprove</a>
+			<a href="" class="text-success btn btn-default" ng-click="approve($index)">approve</a>
 	 	   	<a href="" class="text-danger delete-icon" ng-click="rejectItem($index)">x</a>
 	   </label>
 	</li>

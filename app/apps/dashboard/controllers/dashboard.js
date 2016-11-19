@@ -76,6 +76,17 @@ app.controller("DashboardCtrl", function($scope) {
 	}
 
 	/**
+	 * approve item at index
+	 * @param $index Index of element
+	 */
+	$scope.approve = function($index) {
+		contracts.approve($index).then(function(success){
+			colsole.log("aproved")
+			$scope.$apply();
+		});
+	}
+
+	/**
 	 * reject item at index
 	 * @param $index Index of element
 	 */
