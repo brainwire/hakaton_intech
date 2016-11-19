@@ -1,9 +1,14 @@
 pragma solidity ^0.4.2;
 
+import "BankContract.sol";
+import "BuyerContract.sol";
+import "SellerContract.sol";
+import "WatcherContract.sol";
+
 contract GarantContract{
     address DealsList;
     
-    function GarantContract(ListItem){
+    function GarantContract(){
         DealsList = msg.sender;
     }
     
@@ -42,10 +47,10 @@ contract GarantContract{
     
     
     /*
-    WatcherContract
+    SellerContract
     */
     function createSC() returns(address SellerAddr){
-        return address(new SellerContract);
+        return address(new SellerContract());
     }
     
     function deleteSC(address sc){
@@ -55,7 +60,7 @@ contract GarantContract{
     /*
     WatcherContract
     */
-    function createWC() returns(address WatcherContract){
+    function createWC() returns(address WatcherAddr){
         return address(new WatcherContract());
     }
     

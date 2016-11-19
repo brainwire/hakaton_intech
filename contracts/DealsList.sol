@@ -1,5 +1,7 @@
 pragma solidity ^0.4.2;
 
+import "GarantContract.sol";
+
 contract DealsList {
 
     address owner;
@@ -115,7 +117,7 @@ contract DealsList {
 	}
 
 	function approve(uint index) {
-	    ListItem testItem = getItemForIndex(index);
+	    string testItem = list_items[msg.sender].ListItems[index].name;
 	    createGC;
 	    
 	}
@@ -126,7 +128,7 @@ contract DealsList {
     }
     
     function deleteGC(address gc){
-        GarantContract(bc).remove;
+        GarantContract(gc).remove;
     }
 
 }
