@@ -1,0 +1,18 @@
+<h1>Ethereum Garant Service</h1>
+
+<form class="form form-inline" ng-submit="addItem(item_name)">
+	<input type="text" class="form-group" ng-model="item_name" placeholder="Contract Name">
+	<input id="submit_button" type="submit" class="btn btn-default btn-lg" value="Add Garant">
+</form>
+
+<br />
+
+<ul id="deals_list">
+	<li ng-repeat="item in dealsItems">
+		<label class="control control--checkbox">{{item.name}}
+			<div class="control__indicator"></div>
+			<a href="" class="text-success" ng-click="aproveItem(item, $index)">aprove</a>
+	 	   	<a href="" class="text-danger delete-icon" ng-click="rejectItem($index)">x</a>
+	   </label>
+	</li>
+</ul>

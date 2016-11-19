@@ -1,0 +1,23 @@
+{
+  "name": "hakaton_intech",
+  "homepage": "https://github.com/wadik/hakaton_intech",
+  "authors": [
+    "Vadim Gorbunov <vad.gorbunov@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "bootstrap": "^3.3.7",
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8"
+  }
+}
