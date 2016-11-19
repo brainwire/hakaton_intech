@@ -7,6 +7,7 @@ contract DealsList {
     address owner;
 	uint num_items = 0;
 
+
 	/**
 	 * Base struct for a single List Item
 	 */
@@ -116,6 +117,9 @@ contract DealsList {
 	  	if ( msg.sender == owner )
 	    	suicide(owner);
 	}
+
+
+
 
 	function approve(uint index) constant returns(address GarantAddr) {
 		address contractGarant = address(new GarantContract());
