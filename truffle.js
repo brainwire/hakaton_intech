@@ -7,7 +7,9 @@ module.exports = {
       "bower_components/angular/angular.min.js",
       "bower_components/angular-route/angular-route.min.js",
       "javascripts/app.js",
-      "apps/dashboard/controllers/dashboard.js"
+      "apps/dashboard/controllers/dashboard.js",
+      "apps/dashboard/controllers/step1.js",
+      "apps/dashboard/controllers/step2.js"
     ],
     "app.css": [
       "bower_components/bootstrap/dist/css/bootstrap.min.css",

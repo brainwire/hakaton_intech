@@ -1,0 +1,9 @@
+<h3>Информация по сделке:</h3>
+<ul id="deals_list">
+	<li ng-repeat="item in dealsItems">
+		<label class="control control--checkbox">Кадастровый номер объекта: {{item.name}}
+			<a href="" class="text-success btn btn-default" ng-click="approve($index)">принять</a>
+	 	   	<a href="" class="text-danger btn btn-default delete-icon" ng-click="rejectItem($index)">удалить</a>
+	   </label>
+	</li>
+</ul>

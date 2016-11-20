@@ -15,6 +15,14 @@ contract DealsList {
     	string name;
      	bool state;
      	address garant;
+    	string kadastr;
+    	string adrname;
+    	string price;
+    	string real_price;
+    	string seller_name;
+    	string seller_pasport;
+    	string bayer_name;
+    	string bayer_pasport;
     }
 
 	/**
@@ -42,7 +50,7 @@ contract DealsList {
 	 * @return string, bool
 	 */
 	function getItemForIndex(uint index) constant returns (string, bool) {
-		return (list_items[msg.sender].ListItems[index].name, list_items[msg.sender].ListItems[index].state);
+		return (list_items[msg.sender].ListItems[index].kadastr, list_items[msg.sender].ListItems[index].state);
 	}
 
 	/**

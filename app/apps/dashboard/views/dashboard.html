@@ -1,18 +1,5 @@
-<h1>Ethereum Garant Service</h1>
+<h1>Гарант-сервис</h1>
+<h2>Ethereum Garant Service</h2>
+<h3>Сервис предоставляет полную защиту<br/> для покупателей и продавцов при взаиморасчетах.</h3>
+<a href="#/step1">-----></a>
 
-<form class="form form-inline" ng-submit="addItem(item_name)">
-	<input type="text" class="form-group" ng-model="item_name" placeholder="Contract Name">
-	<input id="submit_button" type="submit" class="btn btn-default btn-lg" value="Add Garant">
-</form>
-
-<br />
-
-<ul id="deals_list">
-	<li ng-repeat="item in dealsItems">
-		<label class="control control--checkbox">{{item.name}}
-			<div class="control__indicator"></div>
-			<a href="" class="text-success btn btn-default" ng-click="approve($index)">approve</a>
-	 	   	<a href="" class="text-danger delete-icon" ng-click="rejectItem($index)">x</a>
-	   </label>
-	</li>
-</ul>

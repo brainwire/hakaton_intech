@@ -1,0 +1,19 @@
+<form class="form" ng-submit="addItem(item)">
+	<label>Предмет сделки: недвижимое имущество - квартира</label><br />
+	<input type="text" class="form-group" ng-model="item.kadastr" placeholder="Кадастровый номер"><br />
+	<input type="text" class="form-group" ng-model="item.adrname" placeholder="Полный адрес объекта"><br />
+	<input type="text" class="form-group" ng-model="item.price" placeholder="Стоимость объекта в руб."><br />
+	<input type="text" class="form-group" ng-model="item.real_price" placeholder="Имеющаяся сумма в руб."><br />
+	<label>Продавец</label><br />
+	<input type="text" class="form-group" ng-model="item.seller_name" placeholder="ФИО"><br />
+	<input type="text" class="form-group" ng-model="item.seller_pasport" placeholder="Паспортные данные">
+	<br />
+	<label>Покупатель</label><br />
+	<input type="text" class="form-group" ng-model="item.bayer_name" placeholder="ФИО"><br />
+	<input type="text" class="form-group" ng-model="item.bayer_pasport" placeholder="Паспортные данные">
+	<br />
+	<input id="submit_button" type="submit" class="btn btn-default btn-lg" value="Подать заявку">
+</form>
+
+<br />
+<a href="#/step2">-----></a>
