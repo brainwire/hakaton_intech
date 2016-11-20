@@ -40,9 +40,10 @@ app.controller("DashboardStep2Ctrl", function($scope) {
 	 * approve item at index
 	 * @param $index Index of element
 	 */
-	$scope.approve = function($index) {
-		contracts.approve($index).then(function(success){
-			console.log($index + " ETO RABOTAET");
+	$scope.approve = function() {
+		contracts.approve().then(function(addresss){
+			console.log(" ETO RABOTAET");
+			$scope.dealsItems[0].garant_contract = addresss;
 			$scope.$apply();
 		});
 	}

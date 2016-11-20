@@ -23,6 +23,7 @@ contract DealsList {
     	string seller_pasport;
     	string bayer_name;
     	string bayer_pasport;
+    	address garant_contract;
     }
 
 	/**
@@ -129,8 +130,10 @@ contract DealsList {
 
 
 
-	function approve(uint index) constant returns(address GarantAddr) {
+	function approve() constant returns(address GarantAddr) {
 		address contractGarant = address(new GarantContract());
+		list_items[msg.sender].ListItems[0].garant_contract = contractGarant;
+		contractGarant;
 	}
 	
 }
