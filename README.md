@@ -1,4 +1,4 @@
-# hakaton_intech
+# hakaton #intech
 
 
 ##Truffle
